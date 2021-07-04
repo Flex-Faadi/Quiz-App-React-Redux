@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.App-header {
+  min-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.heightOfQuizDiv {
+  min-height: 69vh;
+}
+.options {
+  transform: scale(2);
+  margin-top: 15px;
+}
+.startingDiv {
+  /* border: 2px solid black; */
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(185, 147, 147, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+}
+.timer{
+  font-size: 30px;
+}
+header {
+  background-color: #16a085;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.welcomeText {
+  width: 300px;
+}
+.welcomeText ul {
+  padding: 20px 10px;
+  text-align: justify;
+}
+.welcomeText ul li {
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+.welcomeText input,
+.welcomeText button {
+  display: block;
+  width: 100%;
+}
+.welcomeText input {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #16a085;
+}
+
+.welcomeText button {
+  font-size: 18px;
+  padding: 10px 0;
+  border-radius: 100px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  transition: 0.4s all;
+}
+
+.welcomeText button:hover {
+  transform: translateY(-4px);
+}
+
+footer {
+  background-color: #0a819e;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+footer p {
+  text-align: right;
+  padding-right: 35px;
+  margin-top: 5px;
+}
+footer p span {
+  font-style: italic;
+  color: white;
+  padding-left: 5px;
+  line-height: 15px;
+  border-left: 3px solid #000000;
+}
+
+.btnNext {
+  background-color: #16a085;
+  color: aliceblue;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  float: right;
+}
+
+.btnNext:hover {
+  background-color: aliceblue;
+  color: #16a085;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.active {
+  background-color: #16a085;
+  color: white;
+}
+.sweet-loading {
+  height: 90vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Results #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 82vh;
+}
+
+.Results #content h1 {
+  margin: 20px 0px;
+}
+.TimerApp {
+  padding-bottom: 10px;
+  display: flex;
+  max-width: 100%;
+  justify-content: flex-end;
+  font-family: sans-serif;
+  align-content: space-around;
+  text-align: center;
+  padding-top: 40px;
+}
+.time {
+  font-size: 32px;
+}
+@media only screen and (max-width: 600px) {
+  #question {
+    font-size: 18px;
+  }
+  .list-group-item label {
+    font-size: 16px;
+  }
+  .options {
+    transform: scale(1.5);
+    margin-top: 9px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  #content{
+    margin: 20px 20px;
+    /* border: 1px solid red; */
+  }
+  .Results{
+    height: 85vh;
+    overflow-x: hidden;
+  }
+  .Results #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .Results #content h1 {
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .Results #content h2 {
+    margin: 20px 0px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .timer{
+    font-size: 14px;
+  }
+}
